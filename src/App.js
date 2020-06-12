@@ -2,9 +2,10 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import List from './components/List'
 import SearchList from './components/SearchList'
+import './App.css'
 
 
-const key = "Enter your access_key here" 
+const key = "Enter your key here"
 const uri = `https://emoji-api.com/emojis?access_key=${key}`
 
 
@@ -14,6 +15,7 @@ class App extends Component {
         super(props)
     
         this.state = {
+          
             data: [],
             filteredEmogi : ""
         }
@@ -36,6 +38,7 @@ class App extends Component {
             filteredEmogi: event.target.value
         })
     }
+    
 
 
     render() {
@@ -47,9 +50,9 @@ class App extends Component {
         
 
         return (
-            <div className="container my-3 text-center">
-                <h2>Emojicons</h2>
-                <SearchList handleQuery={this.handleQuery} />
+            <div className="container ">
+                <h2 className="heading">Emojicons</h2>
+                <SearchList handleQuery={this.handleQuery} query={this.state.filteredEmogi} />
                 <List data= {filteredData} />
             </div>
         )

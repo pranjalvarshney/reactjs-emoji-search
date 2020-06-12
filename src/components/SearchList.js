@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './SearchList.css'
 
 class SearchList extends Component {
     
@@ -11,10 +12,10 @@ class SearchList extends Component {
     render() {
        
         return (
-            <div>
-                <form>
-                    <input type="text"  onChange={ this.handleInput}/>
-                </form>                
+            <div className="input-container">
+
+                    <input className="input shadow" type="text" value={this.props.query} onChange={ this.handleInput} placeholder="Search or click to copy any emogi"/>
+                                
             </div>
         )
     }

@@ -1,32 +1,44 @@
-import React from 'react'
+import React, { Component } from 'react'
+import './List.css'
 
-function List(props) {
+class List extends Component {
     
-    const allEmojis = props.data
-    
-    if(!allEmojis) return <div>Loading...</div>
 
-  
+    handleClick = (emoji) =>{
+
+        // code to coy emogi to clipboard
+        navigator.clipboard.writeText(emoji.character)
+       alert( "Copied to clipboard" + emoji.character)
+    }    
+    render() {
+    
+        const  allEmojis = this.props.data
+        
+        if(!allEmojis){ 
+            return  (
+                        <tr>Loading...</tr>
+                )
+        }
+    
     return (
-        <div className="container">
-            <table className="table table-hover table-responsive">
-            <thead>
+    
+        <div className="container list-container table-responsive shadow" >
+            <table className="table table-hover bg-white border-0">
+            <thead className="bg-light">
             <tr>
-                <th scope="col">#</th>
+                <th scope="col"><b>#</b></th>
                 <th scope="col">Character</th>
                 <th scope="col">Name</th>
-                <th scope="col">Group</th>
             </tr>
             </thead>
             <tbody>
                 {
                     allEmojis.map((emoji,index)=>{
                         return (
-                            <tr key={index}>
+                            <tr key={index} onClick={()=>this.handleClick(emoji)} >
                                 <th scope="row">{index}</th>
-                                <td>{emoji.character}</td>
+                                <td >{emoji.character}</td>
                                 <td>{emoji.unicodeName}</td>
-                                <td>{emoji.group}</td>
                             </tr>
                         )
                     })
@@ -35,6 +47,7 @@ function List(props) {
         </table>
       </div>
     )
+    }
 }
 
 export default List
