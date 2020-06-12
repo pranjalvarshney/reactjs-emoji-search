@@ -1,3 +1,7 @@
+To run this project..
+Create your own api access key from the website.
+And then update your api key in App.js file
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
