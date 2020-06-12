@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/reactjs-emoji/static/css/main.a3f178a6.chunk.css",
+    "main.js": "/reactjs-emoji/static/js/main.51354a1b.chunk.js",
+    "main.js.map": "/reactjs-emoji/static/js/main.51354a1b.chunk.js.map",
+    "runtime-main.js": "/reactjs-emoji/static/js/runtime-main.70b07d78.js",
+    "runtime-main.js.map": "/reactjs-emoji/static/js/runtime-main.70b07d78.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/reactjs-emoji/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.10c65e5a.chunk.js": "/reactjs-emoji/static/js/2.10c65e5a.chunk.js",
+    "static/js/2.10c65e5a.chunk.js.map": "/reactjs-emoji/static/js/2.10c65e5a.chunk.js.map",
+    "index.html": "/reactjs-emoji/index.html",
+    "precache-manifest.949dc902bf230242a55daa57fc9a7c99.js": "/reactjs-emoji/precache-manifest.949dc902bf230242a55daa57fc9a7c99.js",
+    "service-worker.js": "/reactjs-emoji/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/reactjs-emoji/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.a3f178a6.chunk.css.map": "/reactjs-emoji/static/css/main.a3f178a6.chunk.css.map",
+    "static/js/2.10c65e5a.chunk.js.LICENSE.txt": "/reactjs-emoji/static/js/2.10c65e5a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.70b07d78.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.10c65e5a.chunk.js",
+    "static/css/main.a3f178a6.chunk.css",
+    "static/js/main.51354a1b.chunk.js"
+  ]
+}
